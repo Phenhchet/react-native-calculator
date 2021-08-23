@@ -111,7 +111,6 @@ export default function App() {
         <TouchableOpacity style={styles.themeButton}>
           <Entypo name={darkMode ? 'light-up' : 'moon'} size={24} color={darkMode ? 'white' : 'black'} onPress={() => darkMode ? setDarkMode(false) : setDarkMode(true)}/>
         </TouchableOpacity>
-        <Text>Hello world</Text>
         <Text style={styles.historyText}>{lastNumber}</Text>
         <Text style={styles.resultText}>{currentNumber}</Text>
       </View>
