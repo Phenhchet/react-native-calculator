@@ -66,7 +66,7 @@ export default function App() {
       maxHeight: 45,
       color: '#00b9d6',
       margin: 15,
-      fontSize: 35,
+      fontSize: 35
     },
     historyText: {
       color: darkMode ? '#B5B7BB' : '#7c7c7c',
@@ -111,6 +111,7 @@ export default function App() {
         <TouchableOpacity style={styles.themeButton}>
           <Entypo name={darkMode ? 'light-up' : 'moon'} size={24} color={darkMode ? 'white' : 'black'} onPress={() => darkMode ? setDarkMode(false) : setDarkMode(true)}/>
         </TouchableOpacity>
+        <Text>Hello world</Text>
         <Text style={styles.historyText}>{lastNumber}</Text>
         <Text style={styles.resultText}>{currentNumber}</Text>
       </View>
